@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="selectors.css">
+</head>
+<body>
+    <header>Checking how selectors work</header>
+    <!-- Thesse are for pasting as headings later -->
+<main>
+    <section>
+    <article>
+         <span>Selectors</span>
+         <div>
+        How do selectors work? 
+        <p> Selectors are used to select the HTML elements based on their id, class, type, attributes, values of attributes, etc. CSS selectors are to "find" (or select) the HTML elements you want to style. 
+    There is no selector here, but the above text is for understanding the concept of selectors. if we need to style this text, we can use element selector to select the text and apply styles to it.     
+    </div>
+    </article>    
+    </section>
+    <section>
+    <article>
+        <span>Element selectors</span>
+        <div>What is an element selector?
+            <p>An element selector is used to select HTML elements based on their tag name. For example, p { } selects all paragraph elements.
+        Here I am using no selector to style this text, but if we need to style this text, we can use element selector to select the text and apply styles to it.    
+            </p>
+    </div>
+    </article>    
+    </section>
+    <section>
+    <article>
+        <span class="class-selector">Class selectors</span>
+        <div>
+             What is a class selector?
+<!-- <section><section>Selector</section></section> Everything we place here is a child anad will show 'inside the flexbox of div element.' -->
+            <p>A class selector is used to select HTML elements based on their class attribute. For example, .myClass { } selects all elements with the class "myClass". 
+        Here i am using a class selector to style this text.
+        </div>
+    </article>    
+    </section>
+    <section>
+    <article>
+        <span id="id-selector">ID selectors</span>
+        <div>
+             What is an ID selector?
+            <p>An ID selector is used to select HTML elements based on their id attribute. For example, #myId { } selects the element with the id "myId". 
+        I can target this text using the ID selector to style it.
+        </div>
+    </article>    
+    </section> 
+    <section>
+    <article>
+        <span style="color: rgb(255, 251, 0);">Inline selectors</span>
+            <div>
+                What is an inline selector?
+                <p>An inline selector is used to select HTML elements based on their style attribute. For example, [style] { } selects all elements with a style attribute.
+            This is already styled using an inline selector.
+            </div>
+    </article>    
+    </section><section>
+    <article>
+        <span>Combined selectors</span>
+        <div> How do we combine selectors?
+            <p>A combined selector is used to select HTML elements based on a combination of the above selectors. For example, .myClass { } selects all elements with the class "myClass", and #myId { } selects the element with the id "myId". 
+                I am using a combined selector to style this text. I can use the class selector and ID selector together to style this text. Lets say that we want to style the background color and select the font size of all the headings, paragraphs, and divs using a combined selector. We can use the class selector and ID selector together to style this text. 
+   In selectors.css file, I am writing:  
+    </div>
+    </article>    
+    </section>
+    <section><div>
+        Lets look at lists.
+    </div>
+<span>TYpes of lists:</span>
+<ol type="A">
+    <li>Ordered Lists</li>
+    <li>Unordered Lists</li>
+    <li>Description Lists</li>
+</ol>
+<dl>
+    <dt>Ordered Lists</dt>
+<dd>Used to create lists with an order like numbering, roman numerals, or alphabets.</dd>    
+<dt>Unordered Lists</dt>
+<dd>Used to create lists with no alphabets or roman numerals or numbers. </dd>
+<dt>Description lists</dt>
+<dd>Description lists are used when we have to create lists including term and descriptions related to that term(as in case of this current list with no order and terms and descriptions separated.)
+    </dd>
+    <ol>
+        <li>Ordered lists<br>
+            Some Protein rich foods:
+            <br> Animal-based Proteins:
+            <ol type="a" start="1"> 
+                <!-- Start=1/2/3... means that the ordering will be started from that nth item like 3 strats from c in alphabets. -->
+                <li>Fish</li>
+                <li>Egg</li></ol>
+                Plant-based Proteins:
+                <ol type="a" start="3">
+                <li>Soyabeans</li>
+                <li>Jackfruit</li>
+            </ol>
+        </li>
+        <li>Unordered lists
+        <br> Beautiful cities in Europe
+        <ul>
+            <li>Paris</li>
+            <li>London</li>
+            <li>Geneva</li>
+            <li>Napoli</li>
+            <li>Santorini</li>
+            <li>Athens</li>
+            <li>Rome</li>
+            <li>Venice</li>
+            <li>Istanbul</li>
+        </ul>
+       Beautiful cities in Asia
+        <ul style="list-style-type: armenian;">
+            <li>Tokyo</li>
+            <li>Kyoto</li>
+            <li>Bali</li>
+            <li>Thimpu</li>
+        </ul>
+        </li>
+        <li>Description lists
+            <dt>Coding languages </dt>
+            <dd>Coding is the act of translating human instructions into code (syntax).</dd>
+            <ul>
+                <li>HTML</li>
+                <li></li>
+            </ul>
+            <dt>Programming languages</dt>
+            <dd>Programming language is the actual tool or vocabulary (like Python or JavaScript) used to write that code.</dd>
+        </li>
+    </ol>
+</dl>
+</body>
+</html>
